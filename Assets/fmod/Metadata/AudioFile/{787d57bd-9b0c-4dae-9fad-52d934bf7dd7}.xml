@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{787d57bd-9b0c-4dae-9fad-52d934bf7dd7}">
+		<property name="assetPath">
+			<value>Destroy/Boom4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.073718820861678011</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c640fc65-ecf6-4d61-86f9-c3f801d90ddf}</destination>
+		</relationship>
+	</object>
+</objects>

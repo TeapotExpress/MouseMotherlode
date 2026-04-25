@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{085b65d3-064c-4a15-8a1f-c45181fa4d42}">
+		<property name="assetPath">
+			<value>slow-sci-fi-synthwave-underscore-music-loop-300694.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>164.59755102040816</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c640fc65-ecf6-4d61-86f9-c3f801d90ddf}</destination>
+		</relationship>
+	</object>
+</objects>
