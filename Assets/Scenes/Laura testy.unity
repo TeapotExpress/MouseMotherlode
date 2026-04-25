@@ -2465,7 +2465,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spr: {fileID: 905120404}
   maxSpeed: 15
-  speed: 10
   jumpForce: 10
 --- !u!58 &1451081672
 CircleCollider2D:
@@ -2760,86 +2759,85 @@ MonoBehaviour:
   m_GameObject: {fileID: 1825788923}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f99d5298dcf045338af05b5c24eb16f2, type: 3}
+  m_Script: {fileID: 11500000, guid: c652d0acafb0fab42ac77b0c89c7c6c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  caveGenerator:
-    <MapSize>k__BackingField: {x: 200, y: 200}
-    fillProbability: 0.821
-    iterations: 8
-    birthCeiling: 4
-    survivalThreshold: 5
-  oreGenerator:
-    <OreTypes>k__BackingField:
-    - <Name>k__BackingField: 
-      <OreTile>k__BackingField: {fileID: 0}
-      <ClusterCount>k__BackingField: 0
-      <ClusterSize>k__BackingField: 0
-      <BranchChance>k__BackingField: 0
-      <MinDepth>k__BackingField: 0
-      <MaxDepth>k__BackingField: 0
-    - <Name>k__BackingField: Coal
-      <OreTile>k__BackingField: {fileID: 11400000, guid: 5930c51631718d24e9405fe3a6767a8f, type: 2}
-      <ClusterCount>k__BackingField: 45
-      <ClusterSize>k__BackingField: 60
-      <BranchChance>k__BackingField: 0.05
-      <MinDepth>k__BackingField: 123
-      <MaxDepth>k__BackingField: 195
-    - <Name>k__BackingField: Copper
-      <OreTile>k__BackingField: {fileID: 11400000, guid: b7e416b8587b5d341bb8dde337b9edda, type: 2}
-      <ClusterCount>k__BackingField: 60
-      <ClusterSize>k__BackingField: 65
-      <BranchChance>k__BackingField: 0.1
-      <MinDepth>k__BackingField: 100
-      <MaxDepth>k__BackingField: 183
-    - <Name>k__BackingField: Iron
-      <OreTile>k__BackingField: {fileID: 11400000, guid: ed9e29dc7b3a90248b4df656cea17ed8, type: 2}
-      <ClusterCount>k__BackingField: 45
-      <ClusterSize>k__BackingField: 50
-      <BranchChance>k__BackingField: 0.2
-      <MinDepth>k__BackingField: 80
-      <MaxDepth>k__BackingField: 130
-    - <Name>k__BackingField: Diamond
-      <OreTile>k__BackingField: {fileID: 11400000, guid: 3d26694562b26964f9e2aca14ed9db22, type: 2}
-      <ClusterCount>k__BackingField: 18
-      <ClusterSize>k__BackingField: 6
-      <BranchChance>k__BackingField: 0.35
-      <MinDepth>k__BackingField: 11
-      <MaxDepth>k__BackingField: 64
-    - <Name>k__BackingField: Emerald
-      <OreTile>k__BackingField: {fileID: 11400000, guid: 65546c65f9c9a244e807f7575eb8d47b, type: 2}
-      <ClusterCount>k__BackingField: 12
-      <ClusterSize>k__BackingField: 3
-      <BranchChance>k__BackingField: 0.4
-      <MinDepth>k__BackingField: 18
-      <MaxDepth>k__BackingField: 36
-  mapRenderer:
-    tilemap: {fileID: 730404931}
-    oreTilemap: {fileID: 797583991}
-    depthLayers:
-    - <MinDepth>k__BackingField: 150
-      <MaxDepth>k__BackingField: 256
-      <LayerTile>k__BackingField: {fileID: 11400000, guid: 1371652f106414f4bb60ecd62d06f609, type: 2}
-    - <MinDepth>k__BackingField: 130
-      <MaxDepth>k__BackingField: 150
-      <LayerTile>k__BackingField: {fileID: 11400000, guid: 96dec9ec5e6b2cd4eb91e0bc0f0f4e7b, type: 2}
-    - <MinDepth>k__BackingField: 100
-      <MaxDepth>k__BackingField: 130
-      <LayerTile>k__BackingField: {fileID: 11400000, guid: a163648374c75bf42b2b8fbc4413ff76, type: 2}
-    - <MinDepth>k__BackingField: 85
-      <MaxDepth>k__BackingField: 100
-      <LayerTile>k__BackingField: {fileID: 11400000, guid: 2b09a16553ae96444a9414eab534059d, type: 2}
-    - <MinDepth>k__BackingField: 35
-      <MaxDepth>k__BackingField: 85
-      <LayerTile>k__BackingField: {fileID: 11400000, guid: 8af55d74a6b5cbd43adc15a994fc2f12, type: 2}
-    - <MinDepth>k__BackingField: 5
-      <MaxDepth>k__BackingField: 35
-      <LayerTile>k__BackingField: {fileID: 11400000, guid: fbae5b46745aced40ba405ceb5300065, type: 2}
-    - <MinDepth>k__BackingField: -256
-      <MaxDepth>k__BackingField: 5
-      <LayerTile>k__BackingField: {fileID: 11400000, guid: 45f7e59c8acd0e449bd4f532720b5a3e, type: 2}
-    jaggedAmplitude: 12
-    jaggedFrequency: 6
+  width: 200
+  height: 200
+  fillProb: 0.6
+  iterations: 8
+  birthLimit: 5
+  deathLimit: 3
+  tilemap: {fileID: 730404931}
+  tile: {fileID: 11400000, guid: 1371652f106414f4bb60ecd62d06f609, type: 2}
+  depthLayers:
+  - minDepth: 150
+    maxDepth: 256
+    layerTile: {fileID: 11400000, guid: 1371652f106414f4bb60ecd62d06f609, type: 2}
+  - minDepth: 130
+    maxDepth: 150
+    layerTile: {fileID: 11400000, guid: 96dec9ec5e6b2cd4eb91e0bc0f0f4e7b, type: 2}
+  - minDepth: 100
+    maxDepth: 130
+    layerTile: {fileID: 11400000, guid: a163648374c75bf42b2b8fbc4413ff76, type: 2}
+  - minDepth: 85
+    maxDepth: 100
+    layerTile: {fileID: 11400000, guid: 2b09a16553ae96444a9414eab534059d, type: 2}
+  - minDepth: 35
+    maxDepth: 85
+    layerTile: {fileID: 11400000, guid: 8af55d74a6b5cbd43adc15a994fc2f12, type: 2}
+  - minDepth: 5
+    maxDepth: 35
+    layerTile: {fileID: 11400000, guid: fbae5b46745aced40ba405ceb5300065, type: 2}
+  - minDepth: -256
+    maxDepth: 5
+    layerTile: {fileID: 11400000, guid: 45f7e59c8acd0e449bd4f532720b5a3e, type: 2}
+  jaggedness: 20
+  jaggedScale: 0.04
+  oreTilemap: {fileID: 797583991}
+  oreTypes:
+  - name: Coal
+    tile: {fileID: 11400000, guid: 5930c51631718d24e9405fe3a6767a8f, type: 2}
+    clusters: 45
+    clusterSize: 60
+    branchChance: 0.05
+    minDepth: 123
+    maxDepth: 195
+  - name: Copper
+    tile: {fileID: 11400000, guid: b7e416b8587b5d341bb8dde337b9edda, type: 2}
+    clusters: 60
+    clusterSize: 65
+    branchChance: 0.1
+    minDepth: 100
+    maxDepth: 183
+  - name: Iron
+    tile: {fileID: 11400000, guid: ed9e29dc7b3a90248b4df656cea17ed8, type: 2}
+    clusters: 45
+    clusterSize: 50
+    branchChance: 0.2
+    minDepth: 80
+    maxDepth: 130
+  - name: Gold
+    tile: {fileID: 11400000, guid: 05ce9420abbaa6048bd52fa4a143834c, type: 2}
+    clusters: 35
+    clusterSize: 40
+    branchChance: 0.3
+    minDepth: 50
+    maxDepth: 130
+  - name: Diamond
+    tile: {fileID: 11400000, guid: 3d26694562b26964f9e2aca14ed9db22, type: 2}
+    clusters: 18
+    clusterSize: 6
+    branchChance: 0.35
+    minDepth: 11
+    maxDepth: 64
+  - name: Emerald
+    tile: {fileID: 11400000, guid: 65546c65f9c9a244e807f7575eb8d47b, type: 2}
+    clusters: 12
+    clusterSize: 3
+    branchChance: 0.4
+    minDepth: 18
+    maxDepth: 36
 --- !u!1 &1847794110
 GameObject:
   m_ObjectHideFlags: 0

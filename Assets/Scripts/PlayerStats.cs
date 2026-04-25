@@ -12,7 +12,7 @@ public class PlayerStats : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        PlayerPrefs.SetInt("StartedTheGame", 0);
+        PlayerPrefs.SetInt("StartedTheGame", 0);//<- USUN TO PRZED WYPUSZCZENIEM GRY BO UMRZESZ
 
         if (PlayerPrefs.GetInt("StartedTheGame") == 0)
         {

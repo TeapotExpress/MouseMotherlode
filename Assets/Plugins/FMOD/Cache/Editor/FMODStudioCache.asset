@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: -1085573482
     Data4: 796917898
   Banks:
-  - {fileID: 5038258970195698427}
+  - {fileID: 9211735785771851221}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -46,7 +46,7 @@ MonoBehaviour:
     Data3: 1091994763
     Data4: 1218159827
   Banks:
-  - {fileID: 5038258970195698427}
+  - {fileID: 9211735785771851221}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -54,26 +54,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 165569
---- !u!114 &-3203949083328554766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/fmod/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 639127231572388250
-  FileSizes:
-  - Name: Desktop
-    Value: 988
-  Exists: 1
 --- !u!114 &-1971061777484173940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,7 +73,7 @@ MonoBehaviour:
     Data3: 1110620557
     Data4: -873105414
   Banks:
-  - {fileID: 5038258970195698427}
+  - {fileID: 9211735785771851221}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -101,6 +81,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 141894
+--- !u!114 &-1321692600841798314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Users/Laura/Documents/Moussen/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638866560871589459
+  FileSizes:
+  - Name: Desktop
+    Value: 988
+  Exists: 1
 --- !u!114 &-543744915502662318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
     Data3: -1467705672
     Data4: 472915395
   Banks:
-  - {fileID: 5038258970195698427}
+  - {fileID: 9211735785771851221}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -141,8 +141,8 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -3203949083328554766}
-  - {fileID: 5038258970195698427}
+  - {fileID: -1321692600841798314}
+  - {fileID: 9211735785771851221}
   EditorEvents:
   - {fileID: 2045616536123439128}
   - {fileID: 2550123655570994483}
@@ -152,11 +152,11 @@ MonoBehaviour:
   - {fileID: -4766450772630536128}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 5038258970195698427}
+  - {fileID: 9211735785771851221}
   StringsBanks:
-  - {fileID: -3203949083328554766}
+  - {fileID: -1321692600841798314}
   cacheVersion: 131848
-  cacheTime: 639127231572388250
+  cacheTime: 638866560871589459
   SerializableEventsDict:
   - key: event:/Walk
     index: 0
@@ -189,7 +189,7 @@ MonoBehaviour:
     Data3: 1379453861
     Data4: -1266209792
   Banks:
-  - {fileID: 5038258970195698427}
+  - {fileID: 9211735785771851221}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -216,7 +216,7 @@ MonoBehaviour:
     Data3: 2142763159
     Data4: -490996582
   Banks:
-  - {fileID: 5038258970195698427}
+  - {fileID: 9211735785771851221}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -224,7 +224,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &5038258970195698427
+--- !u!114 &9211735785771851221
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -236,10 +236,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: Assets/fmod/Build/Desktop/Master.bank
+  Path: ../../Users/Laura/Documents/Moussen/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639127231572387344
+  lastModified: 638866560871569344
   FileSizes:
   - Name: Desktop
     Value: 3984352
